@@ -1,1 +1,1 @@
-![GitHub Logo](/seq.png)
+![Subsequence Recursion Tree](/Images/seq.png)
