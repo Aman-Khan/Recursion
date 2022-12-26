@@ -1,0 +1,13 @@
+![Combination](/Images/combination.png)
+void combination(int i, int n, vector<int> temp, vector<vector<int>> &ans, int k){
+    if(temp.size()==k){
+        ans.push_back(temp);
+        return;
+    }
+    
+    for(int ind=i; ind<=n; ind++){
+        temp.push_back(ind);
+        combination(ind+1, n, temp, ans, k);
+        temp.pop_back();
+    }
+}
